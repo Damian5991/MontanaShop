@@ -197,8 +197,8 @@ public class ClientController {
         try {
             clientManager.updateClient(client);
             Date date = new Date(System.currentTimeMillis());
-//            ShoppingCart shoppingCart = new ShoppingCart(client);
-//            shoppingCartManager.add(shoppingCart);
+            ShoppingCart shoppingCart = new ShoppingCart(client);
+            shoppingCartManager.add(shoppingCart);
         }catch(Exception e){
             e.printStackTrace();
         }
