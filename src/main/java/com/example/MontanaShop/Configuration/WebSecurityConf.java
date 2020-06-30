@@ -67,9 +67,9 @@ public class WebSecurityConf extends WebSecurityConfigurerAdapter {
 //                        .hasAuthority("[ROLE_ADMIN]")
                         .antMatchers("/montanashop/client/block-account").authenticated()
 //                        .hasAuthority("[ROLE_ADMIN]")
-                        .antMatchers("/montanashop/client/unlock-account").authenticated()
+                        .antMatchers("/montanashop/client/unlock-account").authenticated();
 //                        .hasAuthority("[ROLE_ADMIN]")
-                        .and().addFilter(new JwtFilter(authenticationManager()));
+//                        .and().addFilter(new JwtFilter(authenticationManager()));
 
 
 
